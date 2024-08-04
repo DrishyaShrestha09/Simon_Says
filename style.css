@@ -1,50 +1,61 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #121212;
+    color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ensures the body takes up full viewport height */
-    font-size: 20px;
-    font-family: sans-serif;
-    margin: 0; /* Removes default margin */
+    height: 100vh; 
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; 
 }
+
 #game {
     display: grid;
-    place-items: center; /* Centers the game element */
+    place-items: center; 
 }
+
 #heading {
     width: 100%;
-    display: block;
     text-align: center;
-    margin-bottom: 20px; /* Adds space below heading */
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
+
 #grid {
     width: 400px;
     height: 400px;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid white;
+    border: 4px solid #ffffff;
+    background: linear-gradient(145deg, #333, #444);
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Simplifies grid column definition */
-    gap: 0; /* Ensures no gap between cells */
+    grid-template-columns: 1fr 1fr; 
+    gap: 0; 
 }
+
 .cell {
     display: grid;
-    place-items: center; /* Centers content in cell */
-    width: 200px;
-    height: 200px;
-    border: 2px solid white;
+    place-items: center; 
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffffff;
 }
+
 #red {
-    background-color: red;
+    background-color: #ff0000; 
 }
+
 #green {
-    background-color: green;
+    background-color: #00ff00;
 }
+
 #yellow {
-    background-color: yellow;
+    background-color: #ffff00;
 }
+
 #blue {
-    background-color: blue;
+    background-color: #0000ff;
 }
